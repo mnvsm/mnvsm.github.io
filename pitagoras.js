@@ -25,7 +25,7 @@ function Uni(u){
 }
 
 function Exibir(validade){
-  if((uni == null)||(uni == " ")) uni = " VAI TOMAR NO CU";
+  if((uni == null)||(uni == " ")) uni = "unidade";
   console.log(uni);
   if(validade == false){
     rHip = rCatO = rCatA = "O Triângulo não existe ou não foi possível calcular o ";
