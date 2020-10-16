@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Length Converter</title>
+  <meta charset='utf-8' lang='pt-br'>
+  <link rel="stylesheet" href="utilitinhus.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kufam&display=swap" rel="stylesheet">
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+</style>
+</head>
+<body>
+  <script src="medidas.js"  type="text/javascript"></script>
+
+<!-- VAI ENTRAR UMA CHAMADA DE HEADER AQUI-->
+  <div class="background">
+
+    <div class="topo">
+
+      <div class="flex horizontal center">
+        
+        <a href="index.html" id="voltar" class="topo basis10">
+          <img src="./img/arrow-left.svg" width="25px" height="25px" margin-left="10px">
+        </a>
+
+        <div class="flex vertical center titulo">
+          <h2>Conversor de medidas</h2>
+        </div>
+
+      </div>
+
+      <div class="txtcenter flex vertical center">
+          <div>Digite um valor abaixo para o converter nos demais campos.</div>
+      </div>
+
+    </div>
+  
+    <div class="flex row container">
+  
+  
+      <div class="box flex horizontal center">
+        <div  class="flex vertical center">
+          <label>Feet (Ft)</label>
+        </div>
+          <input id="feet" type="number" placeholder="Pé" oninput="FeetToMeter(this.value)" onchange="FeetToMeter(this.value)">
+      </div>
+  
+      
+      
+      <div class="box flex horizontal center">
+        <div  class="flex vertical center">
+          <label>Kilometers (Km)</label>
+        </div>
+        <input id="km" type="number" placeholder="Quilometros" oninput="KmToMeter(this.value)" onchange="KmToMeter(this.value)"></input>
+      </div>
+      
+      <div class="box flex horizontal center">
+        <div  class="flex vertical center">
+          <label>Hectometer (Hm)</label>
+        </div>
+        <input id="hm" type="number" placeholder="Hectômetro" oninput="HmToMeter(this.value)" onchange="HmToMeter(this.value)"></input>
+      </div>
+      
+      <div class="box flex horizontal center">
+        <div  class="flex vertical center">
+          <label>Decameters (Dam)</label>
+        </div>
+        <input id="dam" type="number" placeholder="Decâmetro" oninput="DamToMeter(this.value)" onchange="DamToMeter(this.value)"></input>
+      </div>
+      
+      <div class="box flex horizontal center">
+        <div  class="flex vertical center">
+          <label>Meters (M)</label>
+        </div>
+        <input id="meter" type="number" placeholder="Metros" oninput="LenghtConverter(this.value)" onchange="LenghtConverter(this.value)"></input>
+      </div>
+      
+      <div class="box flex horizontal center">
+        <div  class="flex vertical center">    
+          <label>Decimeter (Dm)</label>
+        </div>
+        <input id="dm" type="number" placeholder="Decímetros" oninput="DmToMeter(this.value)" onchange="DmToMeter(this.value)"></input>
+      </div>
+      
+      <div class="box flex horizontal center">
+        <div  class="flex vertical center">
+          <label>Centimeter (Cm)</label>
+        </div>
+        <input id="cm" type="number" placeholder="Centímetros" oninput="CmToMeter(this.value)" onchange="CmToMeter(this.value)"></input>
+      </div>
+      
+      <div class="box flex horizontal center">
+        <div  class="flex vertical center">
+          <label>Millimeter (Mm)</label>
+        </div>
+        <input id="mm" type="number" placeholder="Milímetros" oninput="MmToMeter(this.value)" onchange="MmToMeter(this.value)"></input>
+      </div>
+      
+      <div class="box flex horizontal center">
+        <div  class="flex vertical center">
+          <label>Inch (In)</label>
+        </div>
+        <input id="inch" type="number" placeholder="Polegada" oninput="InchToMeter(this.value)" onchange="InchToMeter(this.value)">
+      </div>
+    </div>
+  </div>
+    
+</body>
+</html>

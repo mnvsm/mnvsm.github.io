@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Feet to Meters Length Converter</title>
+	<link rel="stylesheet" href="medidas.css">
+</head>
+
+<body>
+	<script src="medidas.js" type="text/javascript">
+	</script>
+
+	<!-- VAI ENTRAR UMA CHAMADA DE HEADER AQUI-->
+
+	<h2>Length Converter</h2>
+	<div>Type a value in the field to convert the value to the another fields:</div>
+
+	<div class="box" id="feetL">
+		<label>Feet</label>
+</div>
+
+<div class="box" id="kmL">
+	<label>Kilometers (Km)</label>
+</div>
+
+<div class="box" id="hmL">
+	<label>Hectometer (Hm)</label>
+</div>
+
+
+<div class="box" id="damL">
+	<label>Decameters (Dam)</label>
+</div>
+
+
+<div class="box" id="meterL">
+	<label>Meters (M)</label>
+</div>
+
+<div class="box" id="dmL">
+	<label>Decimeter (Dm)</label>
+</div>
+
+<div class="box" id="cmL">
+	<label>Centimeter (Cm)</label>
+</div>
+
+<div class="box" id="mmL">
+	<label>Millimeter (Mm)</label>
+</div>
+
+
+<div id="inputs">
+  <input id="feet" type="number" placeholder="Feet" oninput="FeetToMeter(this.value)" onchange="FeetToMeter(this.value)">
+  
+  <input id="km" type="number" placeholder="Quilometros" oninput="KmToMeter(this.value)" onchange="KmToMeter(this.value)"></input>
+
+  <input id="hm" type="number" placeholder="Hectômetro" oninput="HmToMeter(this.value)" onchange="HmToMeter(this.value)"></input>
+
+  <input id="dam" type="number" placeholder="Decâmetro" oninput="DamToMeter(this.value)" onchange="DamToMeter(this.value)"></input>
+  
+  <input id="meter" type="number" placeholder="Metros" oninput="LenghtConverter(this.value)" onchange="LenghtConverter(this.value)"></input>
+
+  <input id="dm" type="number" placeholder="Decímetros" oninput="DmToMeter(this.value)" onchange="DmToMeter(this.value)"></input>
+
+  <input id="cm" type="number" placeholder="Centímetros" oninput="CmToMeter(this.value)" onchange="CmToMeter(this.value)"></input>
+
+  <input id="mm" type="number" placeholder="Milímetros" oninput="MmToMeter(this.value)" onchange="MmToMeter(this.value)"></input>
+
+</div>
+
+
+</body>
+</html>

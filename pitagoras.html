@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="utilitinhus.css">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+</style>
+</head>
+<body>
+    
+    <div class="background ">
+
+        <div class="topo">
+
+            <div class="flex horizontal center">
+              <a href="index.html" id="voltar" class="topo basis10">
+                <img src="./img/arrow-left.svg" width="25px" height="25px" margin-left="10px">
+              </a>
+
+              <div class="flex vertical center titulo">
+               <h2>Trigonometria</h2>
+              </div>
+
+            </div>
+
+            <div class="txtcenter flex vertical center">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sint veritatis eos perspiciatis magnam expedita autem ex ab porro enim, ipsa aliquam voluptatem? Voluptate unde repellat eaque dolorem hic tempora.</div>
+            </div>
+
+        </div>
+
+        <div class="padding">
+            <div class="flex horizontal wrap expl">
+                <img src="./img/3angR.svg" alt="Triangulo Retangulo" id="angr">
+                <h1 id="formulaPit" class="txtcenter ">Hip²=Cat²+Cat²</h1>   
+            </div>
+            <script defer src="pitagoras.js"></script>
+            <div>
+                <label style="color: chartreuse;">Cateto Oposto</label>
+                <input id="CatOp" type="number" min="0" placeholder="Cateto oposto" oninput="CatOp(this.value);" >
+            </div>
+            <div>
+                <label style="color: lightskyblue;">Cateto Adjacente</label>
+                <input id="CatAd" type="number" min="0" placeholder="Cateto adjacente" oninput="CatAd(this.value);" >
+            </div>
+            
+            <div>
+                <label style="color: palevioletred;">Hipotenusa</label>
+                <input id="Hip" type="number" placeholder="Hipotenusa" min="0" oninput="Hip(this.value);">
+            </div>
+
+            <input type="text" name="" id="Uni" onchange="Uni(this.value)">
+
+            <button onclick="Calcular()" value="Calcular">Calcular</button>
+            <hr>
+            <div class="flex vertical center">
+              <h3>Resultados</h3>
+
+                <div class="flex horizontal">
+                  <label style="color: chartreuse;">Cateto Oposto: </label>
+                  <span class="resultado" id="resultCatO">0</span>
+                </div>
+
+                <div class="flex horizontal">
+                  <label style="color: lightskyblue;">Cateto Adjacente: </label>
+                  <span class="resultado" id="resultCatA">0</span>
+                </div>
+
+                <div class="flex horizontal">
+                  <label style="color: palevioletred;">Hipotenusa: </label>
+                  <span class="resultado" id="resultHip">0</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
